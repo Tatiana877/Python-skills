@@ -1,0 +1,14 @@
+p = float(input('Процентная ставка: '))
+x = int(input('Сумма вклада в рублях (без копеек): '))
+y = int(input('Сумма вклада в копейках: '))
+k = int(input('Количество лет: '))
+i = 1
+vznos = (100 * x + y)
+prozent = (p * vznos) / 100
+itog = vznos + prozent
+itog2 = 0
+while i != k and i < k:
+    itog2 = int(itog + (p * itog) / 100)
+    itog = itog2
+    i = i + 1
+print(int(itog2 // 100), int(itog2 % 100))
