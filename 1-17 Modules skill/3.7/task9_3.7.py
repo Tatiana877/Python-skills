@@ -1,0 +1,6 @@
+digit = int(input('Введите четырёхзначное число: '))
+remains1 = str(digit % 10)
+remains2 = str((digit % 100) // 10)
+remains3 = str((digit // 100) % 10)
+remains4 = str(digit // 1000)
+print(remains1 + remains2 + remains3 + remains4)
